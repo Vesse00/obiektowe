@@ -40,6 +40,8 @@ public class Board {
             return -1;
         }
     }
+
+    //ustawia znak tam żeby był tam
     public boolean setSignAt(int index, String sign){
         
         if(!sign.equals("X") && !sign.equals("O")) return false;
@@ -73,6 +75,7 @@ public class Board {
         
         return false;
     }
+    
     private boolean checkLine(int a, int b, int c){
         if(board[a].equals(" ") || board[b].equals(" ") || board[c].equals(" ")) return false;
         
